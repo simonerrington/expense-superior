@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      SAGGEZZA
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content name = "login">
+    Welcome<br>
+    Username:<br>
+    <ion-input placeholder="Username" type="text" name = "username" [(ngModel)]='username'></ion-input>
+    Password:<br>
+    <ion-input placeholder="Password" type="Password" name = "password" [(ngModel)] ='password'></ion-input>
+    <ion-button (click)='loginFunction()'>
+      Login
+    </ion-button>
+    <br>Or<br>
+    Sign in with Google account
+</ion-content>
+

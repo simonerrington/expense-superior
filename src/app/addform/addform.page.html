@@ -1,0 +1,110 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Edit form</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+	Cilent project
+	 <ion-item>
+	    <ion-select placeholder="Project Name">
+	      <ion-select-option value="Name 1">Name 1</ion-select-option>
+	      <ion-select-option value="Name 2">Name 2</ion-select-option>
+	    </ion-select>
+	  </ion-item>
+
+	<br>
+	Cilent name
+	<ion-item>
+		<ion-select placeholder="Cilent name">
+			<ion-select-option value="Sagezza-UK">Saggezza UK</ion-select-option>
+			<ion-select-option value="Sagezza-US">Saggezza US</ion-select-option>
+			<ion-select-option value="Cilent">Cilent</ion-select-option>
+		</ion-select>
+	</ion-item>
+
+	<br>
+	Billable to Cilent
+	<ion-segment>
+		<ion-segment-button value="Yes">
+			<ion-label>Yes</ion-label>
+		</ion-segment-button>
+		<ion-segment-button value="No">
+			<ion-label>No</ion-label>
+		</ion-segment-button>
+	</ion-segment>
+
+	Category
+	<ion-item>
+		<ion-select placeholder="Category">
+			<ion-select-option value ="Employee-Rewards">Employee Rewards</ion-select-option>
+			<ion-select-option value="Consumables">Consumables</ion-select-option>
+			<ion-select-option value="General-Office-Expenses">General Office Expenses</ion-select-option>
+			<ion-select-option value="General-Travel:Accommodation">General Travel Accommodation</ion-select-option>
+			<ion-select-option value="General-Travel:Subsistence">General Travel: Subsistence</ion-select-option>
+			<ion-select-option value="Sales-Travel:Accommodation">Sales Travel: Accommodation</ion-select-option>
+			<ion-select-option value="Sales-Entertaining">Sales Entertaining</ion-select-option>
+			<ion-select-option value="Staff-Entertaining">Staff Entertaining</ion-select-option>
+			<ion-select-option value="Recruitment-fees">Recruitment Fees</ion-select-option>
+			<ion-select-option value="Visa&Immigration">Visa And Immigration</ion-select-option>
+			<ion-select-option value="Software-And-IT">Software and It</ion-select-option>
+			<ion-select-option value="Staff-Training">Staff Training</ion-select-option>
+			<ion-select-option value="Stationery&Office-Supplies">Stationery and Office Supplies</ion-select-option>
+			<ion-select-option value="Telephone&Conference">Telephone and Conference</ion-select-option>
+			<ion-select-option value="Other">Other</ion-select-option>
+		</ion-select>
+	</ion-item>
+
+	<br>
+	Description
+	<ion-item>
+	  <ion-textarea placeholder="Description" rows="10" [(ngModel)]='Description'></ion-textarea>
+	</ion-item>
+
+	<br>
+	Payment Method
+	<ion-segment>
+	  <ion-segment-button value="Own-Payment" checked>
+	    <ion-label>Own Payment</ion-label>
+	  </ion-segment-button>
+	  <ion-segment-button value="Corporate-Card">
+	    <ion-label>Corporate Card</ion-label>
+	  </ion-segment-button>
+	</ion-segment>
+
+	<br>
+	Amount
+	<ion-input placeholder="Amount" type="number" name = "username" [(ngModel)]='Amount'></ion-input>
+
+	<br>
+	Currency
+	<ion-segment>
+	  <ion-segment-button value="GBP" checked>
+	    <ion-label>GBP</ion-label>
+	  </ion-segment-button>
+	  <ion-segment-button value="USD">
+	    <ion-label>USD</ion-label>
+	  </ion-segment-button>
+	  <ion-segment-button value="EUR">
+	    <ion-label>EUR</ion-label>
+	  </ion-segment-button>
+	</ion-segment>
+
+	<br>
+	Reciept
+	<ion-segment>
+	  <ion-segment-button value="Soft-Copy" checked>
+	    <ion-label>Yes, Soft Copy</ion-label>
+	  </ion-segment-button>
+	  <ion-segment-button value="Hard-Copy">
+	    <ion-label>Yes, Hard Copy</ion-label>
+	  </ion-segment-button>
+	  <ion-segment-button value="No-Reciept">
+	  	<ion-label>No Reciept</ion-label>
+	  </ion-segment-button>
+	</ion-segment>
+
+	<br><br>
+	<ion-button href="#">Submit</ion-button>
+</ion-content>
